@@ -72,7 +72,6 @@ body {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/Salon\ Decor.jpeg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
   align-items: center;
   padding: 120px 0 60px;
@@ -683,6 +682,47 @@ footer hr {
   cursor: pointer;
   border: none;
 }
+/* CHECKBOXES */
+.services-checkbox {
+  background-color: var(--white);
+  border: 1px solid var(--light-grey);
+  padding: 1.5rem;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.checkbox-category {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-category:first-child {
+  margin-top: 0;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.4rem 0;
+  font-size: 1rem;
+  color: var(--dark);
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  flex-shrink: 0;
+}
 
 /* MOBILE FIXES */
 @media (max-width: 768px) {
@@ -709,31 +749,38 @@ footer hr {
   /* Hero */
   .hero {
     text-align: center;
-    padding: 50px 0 10px;
+    padding: 60px 0 20px;
     min-height: 50vh;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .hero h1 span {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
   .hero-desc {
     margin: 0 auto 2rem;
+    font-size: 1.8rem;
+  }
+
+  .hero-tag{
+    font-size: 1.8rem;
   }
 
   .hero-btns {
     justify-content: center;
+
   }
 
   /* Why Us */
   .why-us {
     text-align: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-left: 5px;
+    padding: 10px 0;
   }
 
   .why-item {
@@ -743,11 +790,11 @@ footer hr {
 
   .why-img {
     height: 300px;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
    .why-us h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .why-desc{
     font-size: 1rem;
