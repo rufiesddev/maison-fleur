@@ -754,25 +754,27 @@ footer hr {
   }
 
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero h1 span {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
   .hero-desc {
     margin: 0 auto 2rem;
-    font-size: 1.8rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   .hero-tag{
-    font-size: 1.8rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
   }
 
   .hero-btns {
     justify-content: center;
-
+    gap: 0.8rem;
   }
 
   /* Why Us */
